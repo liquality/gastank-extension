@@ -15,9 +15,9 @@ import {
 import { RouterProvider, createHashRouter, Outlet } from "react-router-dom";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import MenuIcon from "@mui/icons-material/Menu";
-import Logo from "@/assets/img/logo_icon.svg";
+import Logo from "@/utils/logo";
 import FilterListIcon from "@mui/icons-material/FilterList";
-import Coins from "./coins";
+import Home from "./home";
 
 
 function AppBarMenu() {
@@ -39,7 +39,7 @@ function AppBarMenu() {
               aria-label="logo"
               sx={{ width: 65 }}
             >
-              <img src={Logo} alt="Logo" />
+              <img src={Logo} alt="Logo" width={30} />
             </IconButton>
             <Box sx={{ flexGrow: 1 }} />
             <IconButton
@@ -102,7 +102,7 @@ export const router = createHashRouter([
       {
         index: true,
         path: "",
-        Component: Coins,
+        Component: Home,
       },
       {
         path: "activity",
