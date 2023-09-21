@@ -1,0 +1,10 @@
+[package]
+name = "sui_multisig"
+version = "0.0.1"
+
+[dependencies]
+Sui = { local = "../../../sui/crates/sui-framework/packages/sui-framework" }
+
+[addresses]
+sui_multisig = "0x0"
+
