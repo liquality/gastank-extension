@@ -35,6 +35,7 @@ const manifest: Manifest.WebExtensionManifest = {
   web_accessible_resources: [
     {
       resources: [
+        'js/injected/index.js',
         '16x16.png', 
         '32x32.png', 
         '57x57.png', 
@@ -43,7 +44,7 @@ const manifest: Manifest.WebExtensionManifest = {
         '76x76.png', 
         '96x96.png'
       ],
-      matches: [],
+      matches:  ["<all_urls>"],
     },
   ],
 };

@@ -13,7 +13,7 @@ const publicDir = resolve(__dirname, 'public');
 export default defineConfig({
   resolve: {
     alias: {
-      '@': root
+      '@': root,
     },
   },
   plugins: [
@@ -30,6 +30,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         background: resolve(scriptsDir, 'background', 'index.ts'),
+        injected: resolve(scriptsDir, 'content', 'injected.tsx'),
         popup: resolve(root, 'index.html'),
       },
       output: {
